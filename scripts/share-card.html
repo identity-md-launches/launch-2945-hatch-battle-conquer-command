@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Myth Arena share card</title>
+    <style>
+      @font-face {
+        font-family: DM;
+        src: url("/assets/dm-sans-latin.woff2");
+      }
+      @font-face {
+        font-family: Serif;
+        src: url("/assets/dm-serif-display-latin.woff2");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        background: #0c1210;
+        color: #f0eee5;
+        font-family: DM, Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .art {
+        position: absolute;
+        width: 1200px;
+        height: 630px;
+        object-fit: cover;
+        inset: 0;
+      }
+      .shade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          #0b1712 0%,
+          #0b1712f0 23%,
+          #0b171288 48%,
+          transparent 80%
+        );
+      }
+      main {
+        position: relative;
+        padding: 48px 62px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: Serif, Georgia, serif;
+        font-size: 30px;
+        margin-bottom: 43px;
+      }
+      .brand svg {
+        width: 44px;
+        height: 44px;
+      }
+      h1 {
+        font-family: Serif, Georgia, serif;
+        font-weight: 400;
+        letter-spacing: -2px;
+        font-size: 88px;
+        line-height: 1.03;
+        margin: 0 0 24px;
+      }
+      h1 span {
+        color: #b9d5a9;
+      }
+      p {
+        font-size: 21px;
+        color: #c4cebd;
+        max-width: 380px;
+        line-height: 1.5;
+        margin: 0;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 18px;
+        background: #86c59d;
+        color: #102719;
+        border-radius: 7px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 24px;
+        margin-top: 30px;
+      }
+      .note {
+        font-size: 14px;
+        margin-top: 22px;
+        color: #afbdab;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="art" src="/assets/verdant-dragon.webp" alt="" />
+    <div class="shade"></div>
+    <main>
+      <div class="brand">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path
+            d="m24 2 4 10 12-6-4 13 10 8-14 2-8 16-9-13L3 30l9-11L9 6l12 7 3-11Z"
+            fill="#86c59d"
+          />
+          <path
+            d="m24 12 3 9 8-4-3 10-8 9-5-10 5-2-7-5 7-7Z"
+            fill="#102719"
+          /></svg
+        >myth arena
+      </div>
+      <h1>Hatch. Battle.<br /><span>Conquer.</span></h1>
+      <p>Raise mythical dragons in a tactical battle game.</p>
+      <div class="button">Enter the arena <span>→</span></div>
+      <p class="note">Free to play · AI practice & local PvP</p>
+    </main>
+  </body>
+</html>

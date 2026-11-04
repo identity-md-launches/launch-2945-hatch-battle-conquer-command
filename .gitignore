@@ -1,0 +1,9 @@
+# Explicit delivery budget: artifacts/path-budget.json
+# Each excluded generated path has a zero-byte delivery budget.
+node_modules/
+.cache/
+/test/scratch/
+
+# The complete production export is a required deliverable.
+!dist/
+!dist/**
